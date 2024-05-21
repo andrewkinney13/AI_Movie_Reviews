@@ -70,25 +70,6 @@ X_test = vectorizer.transform(testingReviews)
 # Obtain Ys from the labsl
 y_train, y_test = trainingLabels, testingLables
 
-"""
-# Sample dataset
-reviews = [
-"Love this product, would buy again!",
-"Not what I expected, quite disappointing.",
-"Amazing quality, fast delivery.",
-"The product broke after one use.",
-"Great value for money."
-]
-labels = [1, 0, 1, 0, 1] # 1 for positive, 0 for negative
-
-# Convert text data into numerical vectors
-vectorizer = TfidfVectorizer(stop_words='english')
-X = vectorizer.fit_transform(reviews)   # x are the words in the review, numerically
-
-# Since the dataset is very small, we use it all for training (not recommended for larger datasets)
-X_train, X_test, y_train, y_test = X, X, labels, labels # y are the actual review results, aka good or neg
-"""
-
 # Create an SVM classifier
 classifier = svm.SVC(kernel='linear', verbose= True)
 
