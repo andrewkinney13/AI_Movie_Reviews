@@ -1,5 +1,5 @@
 # Andrew Kinney
-# AI, Project 2
+# Artificial Intelligence, SVM Algorithm Movie Review Project
 # Using SVM to predict movie score based on review content (words)
 # 11.24.2023
 
